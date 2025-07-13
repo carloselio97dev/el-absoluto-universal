@@ -14,14 +14,6 @@ export const Footer = () => {
       </p>
       <p>
         Diseño y Desarrollo por{" "}
-        <a
-          href="https://mentewebs.com"
-          className="text-green-700 font-semibold hover:underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          MenteWebs
-        </a>
       </p>
     </footer> 
   )
