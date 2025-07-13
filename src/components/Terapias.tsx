@@ -1,12 +1,19 @@
-// src/components/Terapias.jsx
 import Image from 'next/image'
-import { FaWhatsapp } from 'react-icons/fa'
+import {
+  FaWhatsapp,
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaTiktok,
+  FaPinterestP,
+} from 'react-icons/fa'
+
 export default function Terapias() {
   return (
-   <section className="bg-gradient-to-b from-pink-50 via-white to-white py-16 px-6 md:px-12">
+    <section className="bg-gradient-to-b from-pink-50 via-white to-white py-16 px-6 md:px-12">
       <div className="max-w-6xl mx-auto bg-white/70 backdrop-blur rounded-xl shadow-xl p-8 md:p-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          {/* Imagen + nombre */}
+          {/* Imagen + nombre + redes */}
           <div className="flex flex-col items-center">
             <Image
               src="/images/terapeuta.jpg"
@@ -21,21 +28,69 @@ export default function Terapias() {
                 Soy Dahiana Velasquez de Lima – Perú
               </span>
             </p>
+
+            {/* Íconos de redes sociales */}
+            <div className="flex flex-wrap justify-center gap-4 mt-4">
+              <a
+                href="https://www.facebook.com/TU-PAGINA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full shadow transition"
+              >
+                <FaFacebookF />
+              </a>
+              <a
+                href="https://www.instagram.com/TU-PERFIL"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 hover:opacity-90 text-white p-2 rounded-full shadow transition"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.youtube.com/@TU-CANAL"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-red-600 hover:bg-red-700 text-white p-2 rounded-full shadow transition"
+              >
+                <FaYoutube />
+              </a>
+              <a
+                href="https://www.tiktok.com/@TU-USUARIO"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-black hover:bg-gray-800 text-white p-2 rounded-full shadow transition"
+              >
+                <FaTiktok />
+              </a>
+              <a
+                href="https://www.pinterest.com/TU-PERFIL"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-red-500 hover:bg-red-600 text-white p-2 rounded-full shadow transition"
+              >
+                <FaPinterestP />
+              </a>
+            </div>
           </div>
 
           {/* Contenido derecho */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-pink-700 mb-4">
-              Lectura y predicciones acertadas
+              "Encuentra equilibrio y bienestar en tu vida"
             </h2>
 
             <p className="text-gray-700 mb-6">
-              Mi trabajo se basa en una visión integrativa y transpersonal que combina la profundidad de la Terapia Gestalt, el poder simbólico del Psicotarot, la limpieza energética del Péndulo Hebreo, la sabiduría del alma a través de los Registros Akáshicos y la cosmobiología.
+              Mi trabajo se basa en una visión integrativa y transpersonal que
+              combina la profundidad de la Terapia Gestalt, el poder simbólico
+              del Psicotarot, la limpieza energética del Péndulo Hebreo, la
+              sabiduría del alma a través de los Registros Akáshicos y la
+              cosmobiología.
             </p>
 
             {/* Botón WhatsApp */}
             <a
-              href="https://wa.me/51987654321"
+              href="https://wa.me/51962305362?text=Hola%20.%C2%BFQuisiera%20agendar%20una%20sesion%3F"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full shadow transition mb-6"
@@ -49,11 +104,10 @@ export default function Terapias() {
               Herramientas terapéuticas:
             </h3>
             <ul className="list-disc list-inside space-y-1 text-gray-800">
-              <li>Terapia Gestalt</li>
-              <li>Psicotarot</li>
-              <li>Radiestesia con Péndulo Hebreo</li>
-              <li>Lectura de Registros Akáshicos</li>
+              <li>Psicoterapia Integrativa Holística</li>
+              <li>Registros akáshicos</li>
               <li>Cosmobiología</li>
+              <li>Tarot predictivo</li>
             </ul>
           </div>
         </div>

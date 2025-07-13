@@ -1,23 +1,12 @@
-// src/components/Sesiones.jsx
+'use client'
+
 import Image from 'next/image'
 
 const terapias = [
   {
-    titulo: 'Terapia Gestalt',
+    titulo: 'Psicoterapia Integrativa Holística',
     descripcion:
-      'Un enfoque humanista que permite tomar conciencia de lo que sentimos, pensamos y hacemos en el aquí y ahora. Ayuda a responsabilizarnos de nuestra vida, sanar vínculos y expresar lo que necesitamos.',
-    imagen: '/images/gestalt.jpg',
-  },
-  {
-    titulo: 'Psicotarot',
-    descripcion:
-      'Uso el tarot como herramienta simbólica y terapéutica, no predictiva. Las cartas funcionan como espejos del inconsciente, abriendo espacio al diálogo interno y a la comprensión profunda de los procesos personales.',
-    imagen: '/images/psicotarot.jpg',
-  },
-  {
-    titulo: 'Radiestesia con Péndulo Hebreo',
-    descripcion:
-      'Terapia bioenergética que utiliza etiquetas en hebreo para identificar y armonizar bloqueos energéticos en el campo áurico. Favorece la liberación emocional y la restauración del equilibrio energético.',
+      'Combina las técnicas psicológicas tradicionales con la terapia de radiestesia con péndulo hebreo y el Tarot terapéutico.',
     imagen: '/images/pendulo.jpg',
   },
   {
@@ -25,6 +14,12 @@ const terapias = [
     descripcion:
       'Canalización de información del alma para comprender aprendizajes, patrones y caminos de evolución. Aporta claridad, sentido y guía espiritual en momentos clave de la vida.',
     imagen: '/images/akashicos.jpg',
+  },
+  {
+    titulo: 'Tarot Predictivo',
+    descripcion:
+      'Lectura de Tarot predictivo, con sesiones presenciales o virtuales para orientación y toma de decisiones.',
+    imagen: '/images/psicotarot.jpg',
   },
   {
     titulo: 'Cosmobiología',
@@ -36,7 +31,7 @@ const terapias = [
 
 export default function Sesiones() {
   return (
-      <section className="bg-pink-50 py-20 px-6 md:px-12">
+    <section className="bg-pink-50 py-20 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-pink-700 mb-12">
           Herramientas que integro en las sesiones
@@ -56,11 +51,18 @@ export default function Sesiones() {
                   className="object-cover"
                 />
               </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-lg font-semibold text-pink-700 mb-2">
-                  {item.titulo}
-                </h3>
-                <p className="text-sm text-gray-700">{item.descripcion}</p>
+              <div className="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 className="text-lg font-semibold text-pink-700 mb-2">
+                    {item.titulo}
+                  </h3>
+                  <p className="text-sm text-gray-700 mb-4">
+                    {item.descripcion}
+                  </p>
+                </div>
+                <button className="mt-auto self-start text-sm text-pink-600 font-semibold hover:underline">
+                  Ver más información
+                </button>
               </div>
             </div>
           ))}

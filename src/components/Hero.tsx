@@ -1,6 +1,6 @@
 // components/HeroStatic.jsx
 "use client"
-import Slider from './Slider'
+import Slider from './Slider';
 
 export default function Hero() {
   return (

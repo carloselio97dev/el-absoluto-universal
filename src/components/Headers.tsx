@@ -11,19 +11,18 @@ export default function Headers() {
   return (
     <header className="bg-white/90 backdrop-blur-md shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-
         {/* LOGO + NOMBRE */}
         <Link href="/" className="flex items-center gap-4">
           <Image
-            src="/logo.png"
+            src="/images/logo.png" // Usa la imagen de alta resolución
             alt="Logo El Absoluto Universal"
             width={60}
             height={60}
-            className="rounded-full"
+             className="w-[60px] h-[60px] object-contain rounded-full"
             priority
           />
           <span className="text-xl font-display text-purple-700">
-            El Absoluto Universal
+           EL ABSOLUTO UNIVERSAL
           </span>
         </Link>
 
@@ -47,32 +46,16 @@ export default function Headers() {
       {/* MENÚ MÓVIL */}
       {isOpen && (
         <nav className="md:hidden flex flex-col items-center px-6 pb-4 text-lg text-gray-800 font-semibold tracking-wide bg-white">
-          <Link
-            href="/"
-            onClick={() => setIsOpen(false)}
-            className="w-full text-center py-2 rounded hover:bg-purple-100 hover:text-purple-700 transition"
-          >
+          <Link href="/" onClick={() => setIsOpen(false)} className="w-full text-center py-2 rounded hover:bg-purple-100 hover:text-purple-700 transition">
             Inicio
           </Link>
-          <Link
-            href="/sobre-mi"
-            onClick={() => setIsOpen(false)}
-            className="w-full text-center py-2 rounded hover:bg-purple-100 hover:text-purple-700 transition"
-          >
+          <Link href="/sobre-mi" onClick={() => setIsOpen(false)} className="w-full text-center py-2 rounded hover:bg-purple-100 hover:text-purple-700 transition">
             Sobre mí
           </Link>
-          <Link
-            href="/servicios"
-            onClick={() => setIsOpen(false)}
-            className="w-full text-center py-2 rounded hover:bg-purple-100 hover:text-purple-700 transition"
-          >
+          <Link href="/servicios" onClick={() => setIsOpen(false)} className="w-full text-center py-2 rounded hover:bg-purple-100 hover:text-purple-700 transition">
             Servicios
           </Link>
-          <Link
-            href="/contacto"
-            onClick={() => setIsOpen(false)}
-            className="w-full text-center py-2 rounded hover:bg-purple-100 hover:text-purple-700 transition"
-          >
+          <Link href="/contacto" onClick={() => setIsOpen(false)} className="w-full text-center py-2 rounded hover:bg-purple-100 hover:text-purple-700 transition">
             Contacto
           </Link>
         </nav>

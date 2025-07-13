@@ -1,6 +1,7 @@
 import { Footer } from "@/components/Footer";
 import Headers from "@/components/Headers";
 import './globals.css'; 
+import WhatsappButton from "@/components/WhatsappButton";
 
 export const metadata = {
   title: "El Absoluto Universal",
@@ -19,6 +20,7 @@ export default function RootLayout({
        <Headers/>
         {children}
        <Footer/>
+       <WhatsappButton/>
       </body>
         
     </html>
