@@ -77,7 +77,7 @@ export default function Terapias() {
           {/* Contenido derecho */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-pink-700 mb-4">
-              "Encuentra equilibrio y bienestar en tu vida"
+              Encuentra equilibrio y bienestar en tu vida
             </h2>
 
             <p className="text-gray-700 mb-6">
