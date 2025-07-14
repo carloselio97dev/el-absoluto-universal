@@ -1,5 +1,6 @@
 import Image from "next/image";
 import WhatsappButton from "../WhatsappButton";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function TerapiaIntegrativaHolistica() {
   return (
@@ -59,7 +60,21 @@ export default function TerapiaIntegrativaHolistica() {
           <p className="text-gray-700 text-center">
             Cada sesión está acompañada de guía, contención y soporte terapéutico para facilitar tu sanación física, emocional y espiritual.
           </p>
-          <WhatsappButton/>
+          {/* Botón WhatsApp */}
+          <div className="flex items-center flex-col">
+
+            <a
+              href="https://wa.me/51962305362?text=Hola%20.%C2%BFQuisiera%20agendar%20una%20sesion%3F"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full shadow transition mb-6"
+            >
+              <FaWhatsapp className="text-xl" />
+             Agenda una Sesion
+            </a>
+          </div>
+
+
         </div>
       </div>
     </section>
