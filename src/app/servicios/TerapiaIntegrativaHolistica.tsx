@@ -1,5 +1,6 @@
 import Image from "next/image";
 import TratamientoBase from "../home/TratamientoBase";
+import SegundaEtapaTratramiento from "@/components/SegundaEtapaTratamiento";
 
 export default function TerapiaIntegrativaHolistica() {
   return (
@@ -11,7 +12,7 @@ export default function TerapiaIntegrativaHolistica() {
             Psicoterapia Integrativa Holística
           </h1>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Un proceso de sanación profunda combinando técnicas psicológicas con terapias energéticas.
+           Tratamiento inicial previo compuesto por 5 etapas
           </p>
         </div>
 
@@ -37,6 +38,7 @@ export default function TerapiaIntegrativaHolistica() {
 
 
         <TratamientoBase/>
+        <SegundaEtapaTratramiento/>
 
       </div>
     </section>
