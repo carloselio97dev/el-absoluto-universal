@@ -10,7 +10,7 @@ import {
   FaPinterestP,
 } from 'react-icons/fa'
 
-export default function Terapias() {
+export default function HeroBienvenida() {
   return (
     <>
       {/* Hero de bienvenida sin fondo blanco */}
@@ -36,7 +36,7 @@ export default function Terapias() {
           {/* Imagen del péndulo */}
           <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center">
             <Image
-              src="/images/pendulo.jpg"
+              src="/images/terapia2.jpg"
               alt="Psicoterapia con péndulo"
               width={320}
               height={400}
@@ -120,8 +120,8 @@ export default function Terapias() {
               <ul className="list-disc list-inside space-y-1 text-gray-800">
                 <li>Psicoterapia Integrativa Holística</li>
                 <li>Registros akáshicos</li>
-                <li>Cosmobiología</li>
-                <li>Tarot predictivo</li>
+                <li>Psico Educación</li>
+                <li>Tarot Predictivo con Enfoque Terapeutico</li>
               </ul>
             </div>
           </div>

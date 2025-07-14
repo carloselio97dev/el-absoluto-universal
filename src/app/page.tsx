@@ -1,15 +1,15 @@
-import Hero from "@/components/Hero";
-import Sesiones from "@/components/Sesiones";
-import TarotConsulta from "@/components/TarotConsulta";
-import Terapias from "@/components/Terapias";
+import Hero from "@/app/home/Hero";
+import Servicios from "@/app/home/Servicios";
+import TarotConsulta from "@/app/home/TarotConsulta";
+import HeroBienvenida from "./home/HeroBienvenida";
 
  
 
 export default function Home() {
   return (
   <>
-    <Terapias/>
-    <Sesiones/>
+    <HeroBienvenida/>
+    <Servicios/>
     <TarotConsulta/>
      <Hero/>
   </>

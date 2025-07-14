@@ -15,24 +15,26 @@ export default function ServicioCard({
   image,
 }: ServicioCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-lg flex flex-col md:flex-row overflow-hidden">
-      <div className="md:w-1/3">
+    <div className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col hover:shadow-xl transition-all duration-300">
+      {/* Imagen */}
+      <div className="relative w-full h-48">
         <Image
           src={image}
           alt={title}
-          width={500}
-          height={300}
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
       </div>
-      <div className="p-6 flex flex-col justify-between md:w-2/3">
+
+      {/* Contenido */}
+      <div className="p-4 flex flex-col justify-between flex-grow">
         <div>
-          <h3 className="text-xl font-bold text-pink-700 mb-2">{title}</h3>
-          <p className="text-gray-700 mb-4 text-sm">{description}</p>
+          <h3 className="text-lg font-bold text-pink-700 mb-2">{title}</h3>
+          <p className="text-sm text-gray-700">{description}</p>
         </div>
         <Link
-         href={`/servicios/${slug}`} 
-          className="text-sm text-pink-600 font-semibold hover:underline"
+          href={`/servicios/${slug}`}
+          className="text-sm text-pink-600 font-semibold hover:underline mt-4 inline-block"
         >
           Ver más información →
         </Link>

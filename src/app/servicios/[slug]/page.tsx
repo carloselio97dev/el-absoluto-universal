@@ -1,16 +1,20 @@
-// app/servicios/[slug]/page.tsx
-
 import React from "react";
-import TerapiaIntegrativaHolistica from "@/components/servicios/TerapiaIntegrativaHolistica";
-import RegistrosAkashicos from "@/components/servicios/RegistrosAkashicos";
-import TarotPredictivo from "@/components/servicios/TarotPredictivo";
-import Cosmobiologia from "@/components/servicios/Cosmobiologia";
+import TerapiaIntegrativaHolistica from "../TerapiaIntegrativaHolistica";
+import RegistrosAkashicos from "../RegistrosAkashicos";
+import TarotPredictivo from "../TarotPredictivo";
+import { PsicoEducacion } from "../PsicoEducacion";
+import PenduloHebreo from "../PenduloHebreo";
+
+
+
 
 const servicios: Record<string, React.ComponentType> = {
   "psicoterapia-integrativa": TerapiaIntegrativaHolistica,
   "registros-akashicos": RegistrosAkashicos,
   "tarot-predictivo": TarotPredictivo,
-  "cosmobiologia": Cosmobiologia,
+  "psico-educacion": PsicoEducacion,
+  "pendulo-hebreo": PenduloHebreo,
+
 };
 
 // Genera todas las rutas estáticas a build time

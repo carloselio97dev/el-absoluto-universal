@@ -1,7 +1,7 @@
-import { Footer } from "@/components/Footer";
-import Headers from "@/components/Headers";
+import { Footer } from "@/app/ui/Footer";
+import Headers from "@/app/ui/Headers";
 import './globals.css'; 
-import WhatsappButton from "@/components/WhatsappButton";
+import WhatsappButton from "@/app/ui/WhatsappButton";
 
 export const metadata = {
   title: 'El Absoluto Universal',
