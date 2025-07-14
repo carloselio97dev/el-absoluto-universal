@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 import {
   FaWhatsapp,
   FaFacebookF,
@@ -15,7 +16,7 @@ export default function Terapias() {
       {/* Hero de bienvenida sin fondo blanco */}
       <section className="bg-pink-100 py-20">
         <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center">
-          
+
           {/* Texto de bienvenida */}
           <div className="w-full md:w-1/2 text-center md:text-left text-black">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -24,12 +25,12 @@ export default function Terapias() {
             <p className="text-lg mb-6">
               Terapias personalizadas, Comienza tu transformación hoy.
             </p>
-            <a
-              href="#servicios"
+            <Link
+              href="/servicios"
               className="inline-block bg-pink-500 text-white py-3 px-6 rounded-full hover:bg-pink-600 transition"
             >
               Conoce más
-            </a>
+            </Link>
           </div>
 
           {/* Imagen del péndulo */}
@@ -49,7 +50,7 @@ export default function Terapias() {
       <section className="bg-gradient-to-b from-pink-50 via-white to-white py-16 px-6 md:px-12">
         <div className="max-w-6xl mx-auto bg-white/70 backdrop-blur rounded-xl shadow-xl p-8 md:p-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            
+
             {/* Foto + nombre + redes */}
             <div className="flex flex-col items-center">
               <Image

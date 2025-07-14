@@ -1,28 +1,34 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
+// Datos de terapias con slugs para navegación
 const terapias = [
   {
     titulo: 'Psicoterapia Integrativa Holística',
+    slug: 'psicoterapia-integrativa',
     descripcion:
       'Combina las técnicas psicológicas tradicionales con la terapia de radiestesia con péndulo hebreo y el Tarot terapéutico.',
     imagen: '/images/pendulo.jpg',
   },
   {
     titulo: 'Lectura de Registros Akáshicos',
+    slug: 'registros-akashicos',
     descripcion:
       'Canalización de información del alma para comprender aprendizajes, patrones y caminos de evolución. Aporta claridad, sentido y guía espiritual en momentos clave de la vida.',
     imagen: '/images/akashicos.jpg',
   },
   {
     titulo: 'Tarot Predictivo',
+    slug: 'tarot-predictivo',
     descripcion:
       'Lectura de Tarot predictivo, con sesiones presenciales o virtuales para orientación y toma de decisiones.',
     imagen: '/images/psicotarot.jpg',
   },
   {
     titulo: 'Cosmobiología',
+    slug: 'cosmobiologia',
     descripcion:
       'La conciencia del pensamiento orientada a que el consultante comprenda su conciencia de unidad.',
     imagen: '/images/cosmobiologia.jpg',
@@ -60,9 +66,13 @@ export default function Sesiones() {
                     {item.descripcion}
                   </p>
                 </div>
-                <button className="mt-auto self-start text-sm text-pink-600 font-semibold hover:underline">
-                  Ver más información
-                </button>
+
+                <Link
+                  href={`/servicios/${item.slug}`}
+                  className="mt-auto self-start text-sm text-pink-600 font-semibold hover:underline"
+                >
+                  Ver más información →
+                </Link>
               </div>
             </div>
           ))}
