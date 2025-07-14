@@ -8,10 +8,10 @@ import Terapias from "@/components/Terapias";
 export default function Home() {
   return (
   <>
-     <Hero/>
     <Terapias/>
     <Sesiones/>
     <TarotConsulta/>
+     <Hero/>
   </>
   );
 }

@@ -6,7 +6,7 @@ import Image from 'next/image'
 const slides = [
   { src: '/images/terapia1.jpg', alt: 'Terapia 1' },
   { src: '/images/terapia2.jpg', alt: 'Terapia 2' },
-  { src: '/images/terapia3.jpg', alt: 'Terapia 3' },
+  { src: '/images/pendulo.jpg', alt: 'Terapia 3' },
 ]
 
 export default function Slider() {

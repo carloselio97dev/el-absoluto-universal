@@ -14,7 +14,7 @@ export default function Headers() {
         {/* LOGO + NOMBRE */}
         <Link href="/" className="flex items-center gap-4">
           <Image
-            src="/images/logo.png" // Usa la imagen de alta resolución
+            src="/images/logo.jpeg" // Usa la imagen de alta resolución
             alt="Logo El Absoluto Universal"
             width={60}
             height={60}
