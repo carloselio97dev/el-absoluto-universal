@@ -10,7 +10,7 @@ interface ServicioIndividualProps {
   };
 }
 
-type ServicioComponent = FC<{}>;
+type ServicioComponent = FC;
 
 const servicios: Record<string, ServicioComponent> = {
   "psicoterapia-integrativa": TerapiaIntegrativaHolistica,
