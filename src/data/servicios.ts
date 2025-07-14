@@ -20,10 +20,10 @@ export const servicios: Servicio[] = [
     description: "Sesiones de Tarot para orientación, toma de decisiones y guía espiritual.",
   },
   {
-    title: "Psicoeducación",
+    title: "Psico Educación",
     slug: "psico-educacion",
     image: "/images/psicoteria.png",
-    description: "Conexión con el ciclo cósmico y comprensión de la unidad universal.",
+    description: "talleres y cursos orientados  a lograr la comprensión de la consciencia de unidad La  Conexión con el ciclo cósmico y comprensión de la unidad universal..",
   },
   {
     title: "Pendulo Hebreo",
