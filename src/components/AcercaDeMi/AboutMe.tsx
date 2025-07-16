@@ -24,7 +24,7 @@ export default function AboutMe() {
       <div className="flex justify-center">
         <div className="w-[250px] h-[250px] rounded-xl overflow-hidden shadow-lg border-2 border-white/60">
           <Image
-            src="/images/teratamientopersoanlizado.jfif"
+            src="/images/terapeuta.jpg"
             alt="Foto de perfil"
             width={250}
             height={250}
