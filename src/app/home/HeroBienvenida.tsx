@@ -1,6 +1,6 @@
-'use client'
-import Image from 'next/image'
-import Link from 'next/link'
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
 import {
   FaWhatsapp,
   FaFacebookF,
@@ -8,40 +8,46 @@ import {
   FaYoutube,
   FaTiktok,
   FaPinterestP,
-} from 'react-icons/fa'
+  FaArrowRight,
+} from 'react-icons/fa';
 
 export default function HeroBienvenida() {
   return (
     <>
-      {/* Hero de bienvenida sin fondo blanco */}
+      {/* Hero de bienvenida con diseño moderno */}
       <section className="bg-pink-100 py-20">
-        <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center">
+        <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-10">
 
-          {/* Texto de bienvenida */}
-          <div className="w-full md:w-1/2 text-center md:text-left text-black">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Bienvenido a tu espacio de bienestar
-            </h1>
-            <p className="text-lg mb-6">
-              Terapias personalizadas, Comienza tu transformación hoy.
-            </p>
-            <Link
-              href="/servicios"
-              className="inline-block bg-pink-500 text-white py-3 px-6 rounded-full hover:bg-pink-600 transition"
-            >
-              Conoce más
-            </Link>
+          {/* Texto de bienvenida con tarjeta blanca */}
+          <div className="w-full md:w-1/2">
+            <div className="bg-white rounded-2xl shadow-xl p-8 text-center md:text-left">
+              <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+                Bienvenido a tu espacio de bienestar
+              </h1>
+              <p className="text-gray-700 text-lg mb-6 leading-relaxed text-justify">
+                Un lugar para reconectar contigo, sanar desde la raíz y transformar tu vida desde la consciencia y el corazón.
+              </p>
+              <Link
+                href="/servicios"
+                className="inline-flex items-center gap-2 bg-pink-600 hover:bg-pink-700 text-white font-semibold px-6 py-3 rounded-full shadow-md transition duration-300"
+              >
+                Conoce más
+                <FaArrowRight className="text-sm" />
+              </Link>
+            </div>
           </div>
 
-          {/* Imagen del péndulo */}
+          {/* Imagen del logo con efecto hover */}
           <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center">
-            <Image
-              src="/images/logo.jpeg"
-              alt="Psicoterapia con péndulo"
-              width={320}
-              height={400}
-              className="rounded-xl shadow-lg object-cover"
-            />
+            <div className="overflow-hidden rounded-2xl shadow-xl transition-transform duration-500 hover:scale-105">
+              <Image
+                src="/images/logo.jpeg"
+                alt="Psicoterapia con péndulo"
+                width={320}
+                height={400}
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -94,14 +100,12 @@ export default function HeroBienvenida() {
 
             {/* Contenido derecho */}
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-pink-700 mb-4">
-                Encuentra equilibrio y bienestar en tu vida
-              </h2>
-
-              <p className="text-gray-700 mb-6">
-                Mi trabajo se basa en una visión integrativa y transpersonal que combina la profundidad de la Terapia Gestalt, el poder simbólico del Psicotarot, la limpieza energética del Péndulo Hebreo, la sabiduría del alma a través de los Registros Akáshicos.
-              </p>
-
+              <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+  Estás a un paso de transformar tu vida
+</h1>
+<p className="text-gray-700 text-lg mb-6 leading-relaxed text-justify">
+  El cambio empieza dentro de ti. Escucha a tu alma, honra tu proceso y permítete sanar con amor y conciencia.
+</p>
               {/* Botón WhatsApp */}
               <a
                 href="https://wa.me/51962305362?text=Hola%20.%C2%BFQuisiera%20agendar%20una%20sesion%3F"
@@ -121,12 +125,12 @@ export default function HeroBienvenida() {
                 <li>Psicoterapia Integrativa Holística</li>
                 <li>Registros akáshicos</li>
                 <li>Psico Educación</li>
-                <li>Tarot Predictivo con Enfoque Terapeutico</li>
+                <li>Tarot Predictivo con Enfoque Terapéutico</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
     </>
-  )
+  );
 }
