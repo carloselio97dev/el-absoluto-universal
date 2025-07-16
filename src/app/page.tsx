@@ -1,9 +1,7 @@
 import Hero from "@/app/home/Hero";
 import Servicios from "@/app/home/Servicios";
 import HeroBienvenida from "./home/HeroBienvenida";
-import EntretenimientoSocialDestacado from "@/components/servicios/EntretenimientoSocialDestacado";
 
- 
 
 export default function Home() {
  return (
