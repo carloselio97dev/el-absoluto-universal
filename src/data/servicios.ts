@@ -19,6 +19,12 @@ export const servicios: Servicio[] = [
     image: "/images/psicotarot.jpg",
     description: "Sesiones de Tarot para orientación, toma de decisiones y guía espiritual.",
   },
+    {
+    title: "Entrenimiento y Sociales",
+    slug: "entrenimiento-sociales",
+    image: "/images/gestalt.jpg",
+    description: "Lleva el misterio del tarot a tus eventos. Lecturas divertidas y reveladoras para entretener a tus invitados con un toque mágico y personalizado..",
+  },
   {
     title: "Psico Educación",
     slug: "psico-educacion",

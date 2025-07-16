@@ -12,13 +12,14 @@ import {
 
 export default function TarotPredictivo() {
   return (
+    <>
     <section className="bg-gradient-to-b from-pink-50 via-white to-pink-50 min-h-screen px-6 py-20">
       <div className="max-w-6xl mx-auto space-y-16">
 
         {/* Encabezado */}
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold text-pink-700 leading-tight">
-            Enfoque Terapéutico
+           Tarot Predictivo con Enfoque Terapéutico
           </h1>
           <p className="text-lg italic text-gray-600 mt-4 max-w-xl mx-auto">
             El Tarot no dicta tu destino, te muestra cómo estás creándolo, para que puedas transformarlo.
@@ -94,6 +95,7 @@ export default function TarotPredictivo() {
 
       </div>
     </section>
+    </>
   );
 }
 

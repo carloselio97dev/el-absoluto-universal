@@ -4,6 +4,7 @@ import RegistrosAkashicos from "../RegistrosAkashicos";
 import TarotPredictivo from "../TarotPredictivo";
 import { PsicoEducacion } from "../PsicoEducacion";
 import PenduloHebreo from "../PenduloHebreo";
+import EntrenimientoSociales from "../Entrenimiento-Sociales";
 
 
 
@@ -14,7 +15,7 @@ const servicios: Record<string, React.ComponentType> = {
   "tarot-predictivo": TarotPredictivo,
   "psico-educacion": PsicoEducacion,
   "pendulo-hebreo": PenduloHebreo,
-
+  "entrenimiento-sociales": EntrenimientoSociales
 };
 
 // Genera todas las rutas estáticas a build time

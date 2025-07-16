@@ -36,7 +36,7 @@ export default function HeroBienvenida() {
           {/* Imagen del péndulo */}
           <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center">
             <Image
-              src="/images/terapia2.jpg"
+              src="/images/logo.jpeg"
               alt="Psicoterapia con péndulo"
               width={320}
               height={400}
