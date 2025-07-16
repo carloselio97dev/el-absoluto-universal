@@ -99,7 +99,7 @@ export default function HeroBienvenida() {
               </h2>
 
               <p className="text-gray-700 mb-6">
-                Mi trabajo se basa en una visión integrativa y transpersonal que combina la profundidad de la Terapia Gestalt, el poder simbólico del Psicotarot, la limpieza energética del Péndulo Hebreo, la sabiduría del alma a través de los Registros Akáshicos y la cosmobiología.
+                Mi trabajo se basa en una visión integrativa y transpersonal que combina la profundidad de la Terapia Gestalt, el poder simbólico del Psicotarot, la limpieza energética del Péndulo Hebreo, la sabiduría del alma a través de los Registros Akáshicos.
               </p>
 
               {/* Botón WhatsApp */}

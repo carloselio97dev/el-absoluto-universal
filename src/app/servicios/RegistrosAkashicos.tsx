@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { FaBookOpen, FaHeart, FaInfinity } from 'react-icons/fa';
+import { FaBookOpen, FaHeart, FaInfinity, FaWhatsapp } from 'react-icons/fa';
 
 export default function RegistrosAkashicos() {
   return (
@@ -31,7 +31,7 @@ export default function RegistrosAkashicos() {
         {/* Contenido principal */}
         <div className="bg-white shadow-md rounded-xl p-6 md:p-10 text-gray-700 space-y-6 text-justify leading-relaxed">
           <p>
-            Los Registros Akáshicos son una biblioteca energética donde se almacena toda la
+            Los <strong>Registros Akáshicos</strong> son una biblioteca energética donde se almacena toda la
             información del alma: vidas pasadas, presente y potencial futuro. A través de esta
             lectura, es posible acceder a mensajes profundos que guían tu evolución espiritual,
             emocional y mental.
@@ -42,8 +42,7 @@ export default function RegistrosAkashicos() {
             bienestar y crecimiento.
           </p>
           <p>
-            Durante la sesión, recibirás orientación amorosa canalizada desde tus guías, para
-            ayudarte a recordar quién eres, cuál es tu propósito, y cómo volver a tu centro.
+            Durante la sesión recibirás orientación canalizada con claridad y empatía desde tus guías y seres de luz , para ayudarte a recordar quién eres , y cómo volver a tu centro .
           </p>
         </div>
 
@@ -52,7 +51,8 @@ export default function RegistrosAkashicos() {
           <div className="bg-white rounded-lg p-6 shadow-md text-center space-y-4">
             <FaBookOpen className="text-4xl text-pink-600 mx-auto" />
             <h3 className="text-lg font-semibold text-pink-700">Claridad espiritual</h3>
-            <p className="text-sm text-gray-600">Comprende el origen de tus bloqueos y tu propósito de alma.</p>
+            <p className="text-sm text-gray-600">Comprenderás el origen de tus bloqueos y tu propósito de alma, y la misión de tu ser en la tierra  y  cómo volver a tu centro</p>
+    
           </div>
           <div className="bg-white rounded-lg p-6 shadow-md text-center space-y-4">
             <FaHeart className="text-4xl text-pink-600 mx-auto" />
@@ -66,14 +66,15 @@ export default function RegistrosAkashicos() {
           </div>
         </div>
 
-        {/* Botón de acción */}
+        {/* Botón de acción con ícono */}
         <div className="text-center pt-4">
           <a
             href="https://wa.me/51962305362?text=Hola,%20quiero%20agendar%20una%20lectura%20de%20Registros%20Ak%C3%A1shicos."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-pink-600 hover:bg-pink-700 text-white font-semibold text-lg px-8 py-3 rounded-full shadow-md transition-all"
+            className="inline-flex items-center gap-2 bg-pink-600 hover:bg-pink-700 text-white font-semibold text-lg px-6 py-3 rounded-full shadow-md transition-all"
           >
+            <FaWhatsapp className="text-xl" />
             Agendar mi sesión por WhatsApp
           </a>
         </div>

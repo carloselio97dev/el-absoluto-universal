@@ -19,12 +19,6 @@ export const servicios: Servicio[] = [
     image: "/images/psicotarot.jpg",
     description: "Sesiones de Tarot para orientación, toma de decisiones y guía espiritual.",
   },
-    {
-    title: "Entrenimiento y Sociales",
-    slug: "entrenimiento-sociales",
-    image: "/images/gestalt.jpg",
-    description: "Lleva el misterio del tarot a tus eventos. Lecturas divertidas y reveladoras para entretener a tus invitados con un toque mágico y personalizado..",
-  },
   {
     title: "Psico Educación",
     slug: "psico-educacion",
@@ -36,5 +30,11 @@ export const servicios: Servicio[] = [
     slug: "pendulo-hebreo",
     image: "/images/pendelo-hebreo.png",
     description: "La terapia del péndulo hebreo es una técnica avanzada de radioestesia. Utiliza este péndulo para diagnosticar y tratar, trabajando específicamente sobre el cuerpo electromagnético (aura). Su objetivo es limpiar energías densas y equilibrar los niveles físicos, mentales, emocionales y espirituales del individuo.",
-  },
+   },
+  //   {
+  //   title: "Entrenimiento y Sociales",
+  //   slug: "entrenimiento-sociales",
+  //   image: "/images/gestalt.jpg",
+  //   description: "Lleva el misterio del tarot a tus eventos. Lecturas divertidas y reveladoras para entretener a tus invitados con un toque mágico y personalizado..",
+  // }
 ];
