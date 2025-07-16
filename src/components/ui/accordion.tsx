@@ -28,13 +28,13 @@ export const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        'flex flex-1 items-center justify-between py-4 font-medium text-green-700',
+        'flex flex-1 items-center justify-between py-4 font-medium text-pink-700 gap-2', // gap para separar texto/ícono
         className
       )}
       {...props}
     >
-      {children}
-      <ChevronDown className="h-7 w-7 md:h-6 md:w-6 transition-transform duration-200 radix-state-open:rotate-180"/>
+      <span className="text-left break-words">{children}</span>
+      <ChevronDown className="h-7 w-7 md:h-6 md:w-6 flex-shrink-0" />
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ));
