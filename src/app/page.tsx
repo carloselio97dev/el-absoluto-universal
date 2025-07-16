@@ -11,12 +11,7 @@ export default function Home() {
       <HeroBienvenida />
       <Servicios />
       <Hero />
-      
-      {/* Contenedor de tarjetas en grid */}
-     <div className="flex justify-center mt-12">
-       <EntretenimientoSocialDestacado />
-    </div>
-
+    
     </>
   );
 }
