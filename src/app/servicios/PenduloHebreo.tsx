@@ -64,7 +64,7 @@ export default function PenduloHebreo() {
         {/* Botón de WhatsApp */}
         <div className="flex justify-center mt-12">
           <a
-            href="https://wa.me/51987654321?text=Hola%2C%20quiero%20agendar%20una%20sesi%C3%B3n%20de%20Psico%20Tarot%20con%20enfoque%20terap%C3%A9utico."
+            href="https://wa.me/51962305362?text=Deseo%20agendar%20un%20Sesi%C3%B3n%20de%20P%C3%A9ndulo%20Hebreo"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-pink-600 hover:bg-pink-700 text-white text-lg font-bold px-8 py-4 rounded-full shadow-lg transition"
