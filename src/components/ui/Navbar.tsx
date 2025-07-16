@@ -15,7 +15,8 @@ export default function Navbar({ isMobile, closeMenu }: Props) {
     { href: "/", label: "Inicio" },
     { href: "/sobre-mi", label: "Sobre mí" },
     { href: "/servicios", label: "Servicios" },
-    { href: "/contacto", label: "Contacto" },
+    { href: "/blog", label: "Blog" },
+    { href: "/tienda", label: "Tienda" },
   ];
 
   const baseClass = "transition font-semibold tracking-wide";
