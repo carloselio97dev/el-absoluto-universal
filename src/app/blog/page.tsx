@@ -1,3 +1,8 @@
+// src/app/blog/page.tsx
+
+// Reconstruye la página cada 60 segundos (ISR)
+export const revalidate = 60;
+
 import { prisma } from '@/lib/prisma';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -9,9 +14,11 @@ export default async function BlogPage() {
 
   return (
     <section className="max-w-5xl mx-auto px-4 py-12 space-y-10">
-      <h1 className="text-4xl font-bold text-center text-pink-700 mb-8">Últimas Entradas</h1>
+      <h1 className="text-4xl font-bold text-center text-pink-700 mb-8">
+        Últimas Entradas
+      </h1>
       <div className="grid md:grid-cols-2 gap-8">
-        {noticias.map(noticia => (
+        {noticias.map((noticia) => (
           <div
             key={noticia.id}
             className="border rounded-xl overflow-hidden shadow hover:shadow-lg transition flex flex-col"
@@ -26,8 +33,12 @@ export default async function BlogPage() {
             </div>
             <div className="p-4 flex flex-col justify-between flex-1">
               <div>
-                <h2 className="text-xl font-semibold text-pink-700">{noticia.titulo}</h2>
-                <p className="text-gray-600 text-sm mt-1">{noticia.resumen}</p>
+                <h2 className="text-xl font-semibold text-pink-700">
+                  {noticia.titulo}
+                </h2>
+                <p className="text-gray-600 text-sm mt-1">
+                  {noticia.resumen}
+                </p>
                 <p className="text-xs text-gray-400 mt-2">
                   {new Date(noticia.fecha).toLocaleDateString()}
                 </p>
