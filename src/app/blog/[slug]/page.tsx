@@ -2,21 +2,21 @@ import { prisma } from '@/lib/prisma';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 
-type Props = {
-  params: { slug: string };
-};
+// Definir los tipos correctos para los parámetros
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
 
-export default async function BlogDetallePage({ params }: Props) {
-  // Esperamos a que params se resuelva antes de usar sus propiedades
+export default async function BlogDetallePage({ params }: PageProps) {
+  // Await the params since they're now a Promise
   const { slug } = await params;
-
-  // Ahora sí podemos consultar la noticia por slug
+  
   const noticia = await prisma.blog.findUnique({
     where: { slug }
   });
+
   if (!noticia) return notFound();
 
-  // Formateamos la fecha en español
   const fechaFormateada = new Date(noticia.fecha).toLocaleDateString('es-ES', {
     day: 'numeric',
     month: 'long',
@@ -29,7 +29,6 @@ export default async function BlogDetallePage({ params }: Props) {
       <p className="inline-block bg-pink-100 text-pink-600 font-semibold px-3 py-1 rounded-md">
         {fechaFormateada}
       </p>
-
       <div className="relative w-full h-96 rounded-lg overflow-hidden">
         <Image
           src={noticia.imagen}
@@ -38,11 +37,21 @@ export default async function BlogDetallePage({ params }: Props) {
           className="object-cover"
         />
       </div>
-
       <div className="prose prose-p:text-gray-800 leading-relaxed">
         <p>{noticia.resumen}</p>
         <p>{noticia.descripcion}</p>
       </div>
     </article>
   );
+}
+
+// generateStaticParams debe devolver Promise<Array<{ slug: string }>>
+export async function generateStaticParams(): Promise<Array<{ slug: string }>> {
+  const noticias = await prisma.blog.findMany({
+    select: { slug: true }
+  });
+
+  return noticias.map(noticia => ({
+    slug: noticia.slug,
+  }));
 }

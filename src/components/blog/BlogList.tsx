@@ -16,7 +16,7 @@ export default async function BlogList() {
         </div>
 
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
-          {noticias.map((noticia, index) => (
+          {noticias.map((noticia) => (
             <div
               key={noticia.id}
               className="bg-white rounded-3xl shadow-xl overflow-hidden transition hover:scale-[1.02] hover:shadow-2xl"

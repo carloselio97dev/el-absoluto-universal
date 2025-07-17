@@ -34,6 +34,7 @@ export default function BlogForm() {
         payload = await res.json();
       } catch (err) {
         payload = { error: 'Respuesta no válida del servidor' };
+        console.log(err);
       }
       console.error('Error al crear noticia:', payload);
       setSubmitting(false);
