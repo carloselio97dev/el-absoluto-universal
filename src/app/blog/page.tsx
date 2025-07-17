@@ -1,7 +1,7 @@
 // src/app/blog/page.tsx
 
-// Reconstruye la página cada 60 segundos (ISR)
-export const revalidate = 60;
+// Fuerza SSR en cada request
+export const dynamic = 'force-dynamic';
 
 import { prisma } from '@/lib/prisma';
 import Link from 'next/link';
