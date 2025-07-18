@@ -8,7 +8,7 @@ import Pagination from '@/components/ui/Pagination'
 export const dynamic = 'force-dynamic'
 
 interface Props {
-  // searchParams is a Promise in App Router routes
+  // searchParams is a Promise in App Router route
   searchParams: Promise<{
     page?: string
   }>
