@@ -5,13 +5,14 @@ import Image from 'next/image'
 import Pagination from '@/components/ui/Pagination'
 
 interface Props {
-  searchParams: { page?: string }
+  searchParams: Promise<{ page?: string }>
 }
 
 export const dynamic = 'force-dynamic'
 
 export default async function PsicoEducacionPage({ searchParams }: Props) {
-  const currentPage = parseInt(searchParams.page ?? '1', 10)
+  const resolvedSearchParams = await searchParams
+  const currentPage = parseInt(resolvedSearchParams.page ?? '1', 10)
   const itemsPerPage = 4
   // traemos 4 por página
 
