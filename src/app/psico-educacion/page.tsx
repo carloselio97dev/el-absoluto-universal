@@ -1,20 +1,26 @@
 // src/app/psico-educacion/page.tsx
+
 import { prisma } from '@/lib/prisma'
 import Link from 'next/link'
 import Image from 'next/image'
 import Pagination from '@/components/ui/Pagination'
 
-interface Props {
-  searchParams: Promise<{ page?: string }>
-}
-
 export const dynamic = 'force-dynamic'
 
-export default async function PsicoEducacionPage({ searchParams }: Props) {
-  const resolvedSearchParams = await searchParams
-  const currentPage = parseInt(resolvedSearchParams.page ?? '1', 10)
+interface Props {
+  // searchParams is a Promise in App Router routes
+  searchParams: Promise<{
+    page?: string
+  }>
+}
+
+export default async function PsicoEducacionPage({
+  searchParams,
+}: Props) {
+  // Esperamos searchParams antes de usarlo
+  const { page } = await searchParams
+  const currentPage = parseInt(page ?? '1', 10)
   const itemsPerPage = 4
-  // traemos 4 por página
 
   const [noticias, totalNoticias] = await Promise.all([
     prisma.blog.findMany({
@@ -33,11 +39,6 @@ export default async function PsicoEducacionPage({ searchParams }: Props) {
         Noticias y Artículos
       </h1>
 
-      {/*
-        Grid:
-        - móvil: grid-cols-1 (pero ocultamos índices ≥2)
-        - md+ : grid-cols-2 ⇒ 2 columnas x 2 filas
-      */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {noticias.map((noticia, i) => (
           <div
@@ -53,6 +54,7 @@ export default async function PsicoEducacionPage({ searchParams }: Props) {
                 alt={noticia.titulo}
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="p-4 flex flex-col justify-between flex-1">
@@ -64,7 +66,11 @@ export default async function PsicoEducacionPage({ searchParams }: Props) {
                   {noticia.resumen}
                 </p>
                 <p className="text-xs text-gray-400 mt-2">
-                  {new Date(noticia.fecha).toLocaleDateString()}
+                  {new Date(noticia.fecha).toLocaleDateString('es-ES', {
+                    day: 'numeric',
+                    month: 'long',
+                    year: 'numeric',
+                  })}
                 </p>
               </div>
               <div className="mt-4">
@@ -80,7 +86,6 @@ export default async function PsicoEducacionPage({ searchParams }: Props) {
         ))}
       </div>
 
-      {/* Paginación con flechas y números */}
       <Pagination
         currentPage={currentPage}
         totalPages={totalPages}
