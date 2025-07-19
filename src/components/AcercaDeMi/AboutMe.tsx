@@ -13,7 +13,7 @@ export default function AboutMe() {
       {/* Título y subtítulo */}
       <div className="text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold text-pink-600 mb-4">
-          Biografía: Psíquica y Tarotista
+          Conoce mas de mì
         </h1>
         <p className="text-gray-700 text-lg max-w-2xl mx-auto">
           Integro la psicología, la espiritualidad y la intuición para acompañarte en tu camino de transformación interior.
