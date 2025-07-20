@@ -1,7 +1,9 @@
 'use client';
-
 import { useActionState, useEffect, useRef, useId } from 'react';
-import { loginAction, type LoginState } from '@/app/intranet/login/action';
+
+
+import { loginAction, LoginState } from '@/app/login/action';
+
 
 const initialState: LoginState = { ok: false };
 

@@ -4,9 +4,9 @@ import {
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-} from '../../components/ui/accordion';
+} from '../../../components/ui/accordion';
 import { FaWhatsapp } from 'react-icons/fa';
-import { penduloHebreoFaqs } from '../../data/penduloHebreoFaqs';
+import { penduloHebreoFaqs } from '../../../data/penduloHebreoFaqs';
 
 export default function PenduloHebreo() {
   return (

@@ -1,30 +1,16 @@
-import { Footer } from "@/components/ui/Footer";
-import Headers from "@/components/ui/Headers";
-import './globals.css'; 
-import WhatsappButton from "@/components/ui/WhatsappButton";
+import './globals.css';
 
 export const metadata = {
   title: 'El Absoluto Universal',
   description: 'Terapias personalizadas para tu bienestar',
-  icons: {
-    icon: '/logo.png',
-  },
-}
+};
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>
-       <Headers/>
+    <html lang="es">
+      <body className="min-h-screen antialiased">
         {children}
-       <Footer/>
-       <WhatsappButton/>
       </body>
-        
     </html>
   );
 }

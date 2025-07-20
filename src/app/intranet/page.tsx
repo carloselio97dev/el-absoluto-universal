@@ -1,15 +1,21 @@
-export default function IntranetDashboard() {
+export default function DashboardPage() {
   return (
-    <div className="space-y-6">
-      <div className="rounded-2xl border border-pink-200/60 bg-white/70 backdrop-blur-sm p-6 shadow-sm">
-        <h1 className="text-2xl font-semibold text-pink-700">
-          Bienvenido a la Intranet
-        </h1>
-        <p className="mt-2 text-sm text-gray-600">
-          Esta es la página principal de la intranet.
-        </p>
+    <div className="p-8 space-y-6">
+      <h1 className="text-3xl font-bold text-pink-700">Dashboard</h1>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="rounded-2xl bg-white/80 backdrop-blur border border-pink-200/40 p-6 shadow-sm">
+          <h2 className="font-semibold text-pink-600 mb-1">Entradas Blog</h2>
+          <p className="text-sm text-gray-600">Resumen rápido del contenido.</p>
+        </div>
+        <div className="rounded-2xl bg-white/80 backdrop-blur border border-pink-200/40 p-6 shadow-sm">
+          <h2 className="font-semibold text-pink-600 mb-1">Citas</h2>
+          <p className="text-sm text-gray-600">Estado de agendas (futuro).</p>
+        </div>
+        <div className="rounded-2xl bg-white/80 backdrop-blur border border-pink-200/40 p-6 shadow-sm">
+          <h2 className="font-semibold text-pink-600 mb-1">Pagos</h2>
+          <p className="text-sm text-gray-600">Últimos pagos (futuro).</p>
+        </div>
       </div>
-      {/* Aquí irán widgets / cards más adelante */}
     </div>
   );
 }

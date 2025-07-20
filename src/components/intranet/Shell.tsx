@@ -1,17 +1,21 @@
-// components/intranet/Shell.tsx
-import Topbar from './Topbar';
 import Sidebar from './Sidebar';
+import Topbar from './Topbar';
 
 export default function Shell({ children }: { children: React.ReactNode }) {
   return (
-    <>
-      <Sidebar />
-      <div className="flex h-screen flex-col overflow-hidden" style={{ paddingLeft: 240 }}>
-        <Topbar />
-        <div className="flex-1 overflow-y-auto custom-scroll px-10 py-10">
-          <div className="mx-auto max-w-5xl">{children}</div>
-        </div>
+    <div className="flex h-screen w-full overflow-hidden bg-[radial-gradient(circle_at_75%_40%,#ffd7f4,#fbe7ff,#fdf4ff)]">
+      {/* Sidebar */}
+      <div className="flex-shrink-0">
+        <Sidebar />
       </div>
-    </>
+
+      {/* Contenido principal */}
+      <div className="flex flex-col flex-1 min-w-0">
+        <Topbar />
+        <main className="flex-1 overflow-y-auto">
+          {children}
+        </main>
+      </div>
+    </div>
   );
 }

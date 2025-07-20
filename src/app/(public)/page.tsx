@@ -1,5 +1,5 @@
-import Hero from "@/app/home/Hero";
-import Servicios from "@/app/home/Servicios";
+import Hero from "@/app/(public)/home/Hero";
+import Servicios from "@/app/(public)/home/Servicios";
 import HeroBienvenida from "./home/HeroBienvenida";
 
 

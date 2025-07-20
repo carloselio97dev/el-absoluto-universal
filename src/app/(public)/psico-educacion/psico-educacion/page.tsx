@@ -1,6 +1,6 @@
 'use client';
 
-import BlogForm from '@/components/blog/BlogForm';
+import BlogForm from '@/components/intranet/blog/BlogForm';
 
 export default function BlogNuevoPage() {
   return (

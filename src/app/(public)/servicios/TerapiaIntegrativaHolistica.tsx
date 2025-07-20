@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TratamientoBase from "../../components/servicios/TerapiaIntegrativaHolistica/TratamientoBase";
+import TratamientoBase from "../../../components/servicios/TerapiaIntegrativaHolistica/TratamientoBase";
 import SegundaEtapaTratramiento from "@/components/servicios/TerapiaIntegrativaHolistica/SegundaEtapaTratamiento";
 
 export default function TerapiaIntegrativaHolistica() {

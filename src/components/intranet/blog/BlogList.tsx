@@ -1,4 +1,5 @@
-import { obtenerEntradasBlog } from '@/lib/blog'; // función que creamos
+import { obtenerEntradasBlog } from '@/lib/blog/blog'; // función que creamos
+
 import Image from 'next/image';
 import Link from 'next/link';
 
