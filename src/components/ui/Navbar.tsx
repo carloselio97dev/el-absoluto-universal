@@ -17,6 +17,7 @@ export default function Navbar({ isMobile, closeMenu }: Props) {
     { href: "/servicios", label: "Servicios" },
     { href: "/psico-educacion", label: "Psico Educacion" },
     { href: "/tienda", label: "Tienda" },
+     { href: "/intranet", label: "Intranet" },
   ];
 
   const baseClass = "transition font-semibold tracking-wide";
